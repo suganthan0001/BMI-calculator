@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI-calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/7a6e35a73a.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
     <div class="main">
-        <p>BMI</p>
-        <div class="weight">
-            <div class="weight-btn">WEIGHT</div>
-            <input type="text"></input>
-            <p>Kilogram</p>
+        <div class="part1">
+            <p class="g bmi1">BMI</p>
+            <div class="weight w-h ">
+                <p class="weight-btn g">WEIGHT</p>
+                <div class="combine">
+                    <input type="text"></input>
+                    <p class="g kg">Kilogram</p>
+                </div>
+            </div>
+            <div class="height w-h">
+                <p class="height-btn g">HEIGHT</p>
+                <div class="combine">
+                    <input type="text"></input>
+                    <p class="g cm">CM</p>
+                </div>
+            </div>
         </div>
-        <div class="height">
-            <div class="height-btn">HEIGHT</div>
-            <input type="text"></input>
-            <p>CM</p>
-        </div>
-        <hr>
+        <hr />
         <div class="part2">
             <div class="output">
                 <div class="main-output">
-                    <p>31.1</p>
-                    <p>BMI</p>
-                    <p>OverWeight</p>
+                    <div class="inner-main">
+                        <!-- <p id="bmiFinal" class="o m-0">31.1</p> -->
+                        <div class="part2-combine">
+                            <p id="bmi" class="dg m-0">BMI</p>
+                            <!-- <p id="overweight" class="o m-0">OverWeight</p> -->
+                        </div>
+                    </div>
+                    <img src="bmi-image" alt="bmi graph">
                 </div>
-                <img src="bmi-image" alt="bmi graph">
             </div>
-            <i class="fa-solid fa-check" style="color: #00090a;"></i>
         </div>
+        <i class="fa-solid fa-check o"></i>
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>

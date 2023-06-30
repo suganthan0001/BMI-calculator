@@ -1,3 +1,139 @@
 body{
-    background-color: #f3f3f7;
+    background-color: #dedee2;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2em;
+    min-height: 70vh;
+    width: 50vh; 
+    border-radius: 20px;
+    box-shadow: -0.3em -0.3em 1em white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    padding: 3em 1.5em;
+}  
+
+.w-h{
+    display: flex;
+    margin: 5% 0%;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.combine{
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.3em;
+}
+input{
+    border: none;
+    border-bottom: #ff922b solid 0.1em;
+    background: transparent;
+    width: 40%;
+    height: 20%;
+    min-height: 2em;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: large;
+    text-align: center;
+    color: #025464;
+    font-weight: 600;
+}
+
+input:focus {
+    outline: none;
+}
+
+p{
+    text-align: center;
+    margin: 0;
+}
+hr{
+    width: 100%;
+}
+.bmi1{
+    font-weight: 600;
+}
+.main-output{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    gap: 4%;
+    padding: 0 5%;
+    height: 10em;
+    border-radius: 40px;
+    box-shadow: -0.2em -0.2em 1em white, 0.2em 0.2em 1em rgba(0, 0, 0, 0.3);
+
+}
+#bmiFinal{
+    grid-row: span 2;
+    font-size: xxx-large;
+    font-weight: bolder;
+}
+.m-0{
+    margin: 0;
+}
+.g{
+    color: #9198a0;
+}
+.dg{
+    color: #868e96;
+}
+.o{
+    color: #ff922b;
+}
+
+#bmi,#overweight{
+    height: fit-content;
+}
+
+#bmi{
+    font-size: 2.3em;
+    font-weight: bolder;
+}
+#overweight{
+    font-size: 0.7em;  
+    font-weight: bold;
+     
+}
+
+.inner-main{
+    display: flex;
+    gap: 7%;
+}
+
+
+.kg{
+    font-size: small;
+    margin-right: 1.4em;
+}
+.cm{
+    font-size: small;
+    margin-right: 3em;
+}
+
+.weight-btn, .height-btn{
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background: linear-gradient(160deg,#cdced3,#e0e2e5);
+    border: 1px solid #cdced3;
+}
+
+i{
+    border-radius: 50%;
+    width: fit-content;
+    padding: 1em;
+    box-shadow: -0.1em -0.1em 1em white, 0.1em 0.1em 1em rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
 }
