@@ -22,14 +22,14 @@
             <div class="weight w-h ">
                 <p class="weight-btn g">WEIGHT</p>
                 <div class="combine">
-                    <input type="text"></input>
+                    <input type="text" id="kilogram">
                     <p class="g kg">Kilogram</p>
                 </div>
             </div>
             <div class="height w-h">
                 <p class="height-btn g">HEIGHT</p>
                 <div class="combine">
-                    <input type="text"></input>
+                    <input type="text" id="centimeter">
                     <p class="g cm">CM</p>
                 </div>
             </div>
@@ -42,17 +42,17 @@
             <div class="output">
                 <div class="main-output">
                     <div class="inner-main">
-                        <p id="bmiFinal" class="o m-0">31.1</p>
+                        <p id="bmiFinal" class="o m-0"></p>
                         <div class="part2-combine">
                             <p id="bmi" class="dg m-0">BMI</p>
-                            <p id="overweight" class="o m-0">OverWeight</p>
+                            <p id="overweight" class="o m-0"></p>
                         </div>
                     </div>
                     <img src="bmi.png" alt="bmi graph">
                 </div>
             </div>
         </div>
-        <i class="fa-solid fa-check o"></i>
+        <i class="fa-solid fa-check o" onclick="calculate()"></i>
     </div>
     <script src="index.js"></script>
 </body>
